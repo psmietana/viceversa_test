@@ -20,7 +20,7 @@ class AppFixtures extends Fixture
             $book = new Book(
                 'title test ' . $i,
                 'author test ' . $i,
-                $i % 2 === 0 ? self::LOREM_IPSUM : null,
+                0 === $i % 2 ? self::LOREM_IPSUM : null,
                 rand(1448, 2024),
                 $this->generator->generate()
             );
